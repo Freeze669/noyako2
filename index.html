@@ -13,7 +13,6 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-leaf"></i>
                 <span>Noyako</span>
             </div>
             <ul class="nav-menu">
@@ -35,23 +34,40 @@
     <section id="accueil" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Bienvenue Noyako</h1>
+                <h1>Bienvenue sur <span class="highlight">Noyako</span></h1>
                 <p>Rejoignez notre communauté Discord dédiée à la nature et à l'harmonie. Un espace vert où les passionnés se rencontrent.</p>
+                
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">
-                        <i class="fab fa-discord"></i>
+                    <a href="https://discord.gg/KeT6JYX5JP" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                         Rejoindre le serveur
                     </a>
                     <a href="#a-propos" class="btn btn-secondary">En savoir plus</a>
                 </div>
             </div>
+            
             <div class="hero-image">
                 <div class="nature-illustration">
-                    <div class="floating-element leaf-1">🍃</div>
-                    <div class="floating-element leaf-2">🌿</div>
-                    <div class="floating-element leaf-3">🌱</div>
-                    <div class="floating-element water-1">💧</div>
-                    <div class="floating-element water-2">🌊</div>
+                    <!-- Les éléments naturels seront ajoutés dynamiquement par JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Section Fondateur tout à droite -->
+            <div class="founder-section">
+                <div class="founder-card">
+                    <div class="founder-avatar">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="founder-info">
+                        <h3>Fondateur</h3>
+                        <p class="founder-name">Noyako</p>
+                                                    <p class="founder-discord">Discord: noyako9_</p>
+                        <div class="founder-links">
+                            <a href="https://discord.gg/KeT6JYX5JP" class="founder-link">
+                                <i class="fab fa-discord"></i>
+                                Serveur Discord
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,6 +78,7 @@
 
     <!-- Section À propos -->
     <section id="a-propos" class="about">
+        
         <div class="container">
             <div class="section-header">
                 <h2>À propos de Noyako</h2>
@@ -106,6 +123,7 @@
 
     <!-- Section Fonctionnalités -->
     <section id="fonctionnalites" class="features">
+        
         <div class="container">
             <div class="section-header">
                 <h2>Nos Fonctionnalités</h2>
@@ -160,6 +178,7 @@
 
     <!-- Section Communauté -->
     <section id="communaute" class="community">
+        
         <div class="container">
             <div class="section-header">
                 <h2>Notre Communauté</h2>
@@ -203,6 +222,7 @@
 
     <!-- Section Contact -->
     <section id="contact" class="contact">
+        
         <div class="container">
             <div class="section-header">
                 <h2>Rejoignez Noyako</h2>
@@ -235,15 +255,15 @@
                 </div>
                 <div class="contact-form">
                     <h3>Nous contacter</h3>
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Votre nom" required>
+                            <input type="text" name="name" placeholder="Votre nom" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Votre email" required>
+                            <input type="email" name="email" placeholder="Votre email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Votre message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
@@ -257,19 +277,17 @@
 
     <!-- Footer -->
     <footer class="footer">
+        
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
                         <span>Noyako</span>
                     </div>
                     <p>Une communauté Discord dédiée à la nature et à l'harmonie.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                                         <div class="social-links">
+                         <a href="https://discord.gg/KeT6JYX5JP" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Liens rapides</h4>
@@ -296,6 +314,9 @@
         </div>
     </footer>
 
+    <!-- Particules flottantes -->
+    <div id="particles-container"></div>
+    
     <script src="script.js"></script>
 </body>
 </html> 
